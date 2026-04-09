@@ -1,11 +1,30 @@
-#title{
+.container {
+    display: flex;
+    align-items: center; /* 垂直居中 */
+    justify-content: space-between; /* 左右两端对齐，中间自动填充 */
+    padding: 10px;
+}
+  
+.left-img, .right-img {
+    height: 40px; /* 根据需要调整 */
+    vertical-align: middle;
+    padding: 20px;
+}
+  
+.title {
+    margin: 0;
+    flex: 1; /* 标题占据中间剩余空间 */
+    text-align: center;
+}
+ #title{
     color: white; 
     line-height: 8px;
     background-color: orange;
     text-align: center;
     border-top: 1px solid black;
     border-bottom: 1px solid black;
-    height: 50px;
+    height: 30px;
+
 }
 #inquire{
     text-indent: 1em;
@@ -13,6 +32,12 @@
     border-bottom: 1px solid black;
     height: 40px;
     line-height: 40px;
+    img{
+        float: right;
+        top: 50%;
+        height: 40px;
+        padding-right: 40px;
+    }
 }
 .odd{
     text-indent: 2em;
@@ -20,6 +45,13 @@
     border-bottom: 1px solid black;
     height: 40px;
     line-height: 40px;
+    img{
+        float: right;
+        top: 50%;
+        height: 40px;
+        padding-right: 40px;
+    }
+
 }
 .uneven{
     text-indent: 2em;
@@ -27,4 +59,23 @@
     border-bottom: 1px solid black;
     height: 40px;
     line-height: 40px;
+    img{
+        float: right;
+        top: 50%;
+        height: 40px;
+        padding-right: 40px;
+    }
+    
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+.contact {
+    display: flex;
+    align-items: center; /* 垂直居中 */
+    justify-content: space-between; /* 左右两端对齐，中间自动填充 */
+    padding-right: 66px;
+    padding-left: 88px;
+    color: red;
 }
